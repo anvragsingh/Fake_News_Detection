@@ -1,0 +1,17 @@
+torch>=2.2.0
+transformers>=4.37.0
+datasets>=2.16.1
+scikit-learn>=1.4.0
+pandas>=2.2.0
+numpy>=1.26.3
+tqdm>=4.66.1
+jupyter>=1.0.0
+tensorboard>=2.15.1
+accelerate>=0.26.1
+optuna>=3.5.0
+matplotlib>=3.8.2
+seaborn>=0.13.2
+shap>=0.44.1
+mypy>=1.8.0
+black>=24.1.0
+flake8>=7.0.0

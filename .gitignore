@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.env.local
+.venv
+venv/
+env/
+ENV/
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+node_modules/
+dist/
+.npm
+.eslintcache
+
+# Machine Learning
+ml-training/data/
+ml-training/models/
+*.pkl
+*.h5
+*.pth
+*.pt
+*.onnx
+model.safetensors
+
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation & Large Files
+code-struct.docx
+implementation-doc.pdf
+pdf_content.txt
+
+# OS generated files
+Thumbs.db
+Desktop.ini

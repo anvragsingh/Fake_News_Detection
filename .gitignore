@@ -51,3 +51,4 @@ pdf_content.txt
 # OS generated files
 Thumbs.db
 Desktop.ini
+*.db

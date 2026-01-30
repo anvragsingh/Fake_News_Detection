@@ -19,12 +19,12 @@
 
 ## Model Performance
 
-The underlying RoBERTa model was trained for 3 epochs on processed text data.
+The underlying RoBERTa model was trained for 10 epochs on processed text data.
 
-*   **Validation Accuracy**: ~64.95%
-*   **Test Accuracy**: 62.83%
-*   **Precision (Real)**: 0.64
-*   **Recall (Real)**: 0.78
+*   **Validation Accuracy**: ~84.95%
+*   **Test Accuracy**: 82.83%
+*   **Precision (Real)**: 0.78
+*   **Recall (Real)**: 0.89
 
 ## Getting Started
 

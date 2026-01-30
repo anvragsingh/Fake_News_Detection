@@ -15,3 +15,5 @@ redis>=5.0.1
 biopython; sys_platform == "linux" # Just an example, ensuring platform specific if needed, but not here
 httpx>=0.26.0
 pytest>=8.0.0
+transformers>=4.37.0
+torch>=2.2.0

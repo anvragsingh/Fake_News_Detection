@@ -22,8 +22,17 @@ class FakeNewsModel:
             self.model.eval()
             print("✅ Model loaded successfully")
         except Exception as e:
-            print(f"❌ Error loading model: {e}")
-            raise e
+            print(f"⚠️ Error loading fast tokenizer: {e}")
+            print("🔄 Attempting to load with use_fast=False...")
+            try:
+                self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+                self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
+                self.model.to(self.device)
+                self.model.eval()
+                print("✅ Model loaded successfully (using slow tokenizer)")
+            except Exception as e2:
+                print(f"❌ Error loading model (fallback failed): {e2}")
+                print("Try checking if 'transformers' version is compatible (needs ~4.37.0)")
 
     def predict(self, text: str):
         """
